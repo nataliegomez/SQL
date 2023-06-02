@@ -1,0 +1,25 @@
+Create a clothing store database. 
+
+CREATE TABLE clothes (id INTEGER PRIMARY KEY, item TEXT, pricing INTEGER, instore_quantity INTEGER, discount INTEGER); 
+
+INSERT INTO clothes VALUES (1, "tshirts", 25, 42, 15);
+INSERT INTO clothes VALUES (2, "denim_pants", 55, 87, 30);
+INSERT INTO clothes VALUES (3, "tank_tops", 25, 49, 30); 
+INSERT INTO clothes VALUES (4, "bikini_tops", 25, 30, 15); 
+INSERT INTO clothes VALUES (5, "bikini_bottoms", 20, 32, 15); 
+INSERT INTO clothes VALUES (6, "hoodies", 45, 23, 30);
+INSERT INTO clothes VALUES (7, "socks", 12, 45, 0); 
+INSERT INTO clothes VALUES (8, "longsleeve_tees", 30, 23, 50); 
+INSERT INTO clothes VALUES (9, "sweatpants", 45, 27, 35); 
+INSERT INTO clothes VALUES (10, "skirts", 35, 15, 25); 
+INSERT INTO clothes VALUES (11, "dresses", 65, 15, 40); 
+INSERT INTO clothes VALUES (12, "shorts", 30, 45, 25); 
+INSERT INTO clothes VALUES (13, "cargo_pants", 45, 28, 30); 
+INSERT INTO clothes VALUES (14, " crewnecks", 45, 15, 30); 
+INSERT INTO clothes VALUES (15, "collared_shirts", 35, 55, 20); 
+
+What is the price of these clothes put in order from least to greatest? 
+SELECT * FROM clothes ORDER BY pricing;
+
+What is the order of these clothes in pricing from least to greatest, for any clothing marked higher than $30? 
+SELECT * FROM clothes WHERE pricing > 30 ORDER BY instore_quantity 
